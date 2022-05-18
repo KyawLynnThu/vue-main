@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class=""></div>
+    <nav-bar></nav-bar>
+    <video-banner></video-banner>
+    <!-- <login-form></login-form> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/NavBar.vue'
+// import LoginForm from './components/LoginForm.vue'
+import VideoBanner from './components/VideoBanner.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NavBar, VideoBanner
+    // LoginForm
   }
 }
 </script>
@@ -23,6 +28,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
